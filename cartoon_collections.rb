@@ -18,6 +18,9 @@ def long_planeteer_calls(exclamations)
     end
   end
   if qualifiers.length > 0
+    return true
+  else
+    return false
   end
 end
 
