@@ -12,16 +12,8 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(exclamations)
-  qualifiers = exclamations.map do | call |
-    if call.length > 4
-      "#{call}"
-    end
-  end
-  p qualifiers
-  if qualifiers.length > 0
-    return true
-  else
-    return false
+  exclamations.any? do | call |
+    call.length > 4
   end
 end
 
