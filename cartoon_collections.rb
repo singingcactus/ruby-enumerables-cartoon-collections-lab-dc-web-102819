@@ -13,7 +13,7 @@ end
 
 def long_planeteer_calls(exclamations)
   qualifiers = exclamations.map do | call |
-    if call.length >= 4
+    if call.length > 4
       "#{call}"
     end
   end
